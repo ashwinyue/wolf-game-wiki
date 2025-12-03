@@ -10,7 +10,7 @@ npm install
 npm run docs:dev
 ```
 
-访问 http://localhost:5173/wolf-game-wiki/
+访问 http://localhost:5173/
 
 ### 构建项目
 ```bash
@@ -66,7 +66,7 @@ werewolf-wiki/
 ## 🌐 访问地址
 
 - **GitHub Pages**: https://ashwinyue.github.io/wolf-game-wiki/
-- **本地开发**: http://localhost:5173/wolf-game-wiki/
+- **本地开发**: http://localhost:5173/
 
 ## 🛠️ 技术栈
 

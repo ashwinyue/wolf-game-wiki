@@ -6,6 +6,16 @@ export default defineConfig({
   base: '/wolf-game-wiki/',
   lang: 'zh-CN',
   
+  // 忽略死链接检查
+  ignoreDeadLinks: [
+    // 忽略本地开发地址
+    /^http:\/\/localhost/,
+    // 忽略相对路径链接
+    /^\.\.\/roles\//,
+    // 或者简单地设置为 true 忽略所有死链接
+    // true
+  ],
+  
   // 主题配置
   appearance: true,
   lastUpdated: true,

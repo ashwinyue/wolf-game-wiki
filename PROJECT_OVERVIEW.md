@@ -131,7 +131,7 @@ npm run docs:preview
 
 ## 🌐 访问地址
 
-- **本地开发**：http://localhost:5173/werewolf-wiki/
+- **本地开发**：http://localhost:5173/
 - **生产环境**：部署后可访问对应域名
 
 ## 📄 许可证
