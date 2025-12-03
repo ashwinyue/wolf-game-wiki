@@ -5,9 +5,16 @@
 项目已经配置了 GitHub Actions，当你推送代码到 `main` 分支时，会自动部署到 GitHub Pages。
 
 ### 步骤：
-1. 推送代码到 main 分支
-2. 等待 GitHub Actions 完成部署
-3. 访问 https://ashwinyue.github.io/wolf-game-wiki/
+1. **启用 GitHub Pages**（首次设置需要）
+   - 访问仓库的 Settings 页面
+   - 找到 "Pages" 部分
+   - 在 "Source" 下选择 "Deploy from a branch"
+   - 选择 "gh-pages" 分支和 "/ (root)" 目录
+   - 点击 "Save"
+
+2. 推送代码到 main 分支
+3. 等待 GitHub Actions 完成部署
+4. 访问 https://ashwinyue.github.io/wolf-game-wiki/
 
 ### 查看部署状态：
 1. 访问 GitHub 仓库页面
