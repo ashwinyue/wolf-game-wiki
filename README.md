@@ -1,36 +1,38 @@
-# 🐺 狼人杀游戏 Wiki
+# 狼人杀游戏 Wiki
 
-基于 Eino ADK 框架的智能狼人杀游戏对话记录展示系统。
-
-## 🌟 特性
-
-- **完整游戏记录**：详细记录每局游戏的完整对话过程
-- **智能角色扮演**：基于大语言模型的AI角色扮演
-- **清晰时间线**：按照游戏进程展示昼夜交替和投票阶段
-- **数据统计分析**：提供详细的游戏数据统计和角色表现分析
-- **响应式设计**：适配各种设备屏幕尺寸
-- **VitePress驱动**：基于 VitePress 构建，性能优异
+基于 Eino ADK 的智能狼人杀游戏中文对话展示网站
 
 ## 🚀 快速开始
 
-### 安装依赖
-```bash
-npm install
-```
-
 ### 本地开发
 ```bash
+npm install
 npm run docs:dev
 ```
 
-### 构建生产版本
+访问 http://localhost:5173/wolf-game-wiki/
+
+### 构建项目
 ```bash
 npm run docs:build
 ```
 
-### 预览构建结果
+### 部署到 GitHub Pages
+
+#### 自动部署（推荐）
+1. 推送代码到 main 分支
+2. GitHub Actions 会自动部署到 GitHub Pages
+
+#### 手动部署
 ```bash
-npm run docs:preview
+# 使用部署脚本
+./deploy.sh
+
+# 或者手动构建和推送
+npm run docs:build
+git add .
+git commit -m "Update content"
+git push origin main
 ```
 
 ## 📁 项目结构
@@ -38,53 +40,40 @@ npm run docs:preview
 ```
 werewolf-wiki/
 ├── .vitepress/          # VitePress 配置
-│   ├── config.mts      # 站点配置
-│   └── theme/          # 主题配置
-├── public/             # 静态资源
-│   └── icons/          # 图标文件
-├── games/              # 游戏记录页面
-│   ├── index.md        # 游戏记录首页
-│   ├── 20251203.md     # 2025年12月3日对局
-│   └── history.md      # 历史对局
-├── roles/              # 角色介绍页面
-│   └── index.md        # 角色介绍首页
-├── statistics/         # 数据统计页面
-│   └── index.md        # 统计首页
-└── index.md            # 站点首页
+│   ├── config.mts       # 主配置文件
+│   └── theme/           # 自定义主题
+├── .github/             # GitHub 配置
+│   └── workflows/       # GitHub Actions
+├── public/              # 静态资源
+│   ├── logo.svg         # 项目 logo
+│   └── icons/           # 图标资源
+├── guide/               # 使用指南
+├── games/               # 游戏记录
+├── roles/               # 角色介绍
+├── statistics/          # 数据统计
+└── about/               # 关于项目
 ```
 
-## 🎮 最新对局
+## 🎯 功能特性
 
-### 2025年12月3日 - 经典9人局
-- **结果：** 🏆 村民阵营获胜
-- **时长：** 4天3夜
-- **亮点：** 女巫创造平安夜，预言家双查验命中，最终5票统一淘汰狼人
+- ✅ 完整的游戏对话记录展示
+- ✅ 角色介绍和策略指南
+- ✅ 数据统计和分析
+- ✅ 响应式设计
+- ✅ 现代化界面
+- ✅ 支持 GitHub Pages 部署
 
-[查看详细记录 →](./games/20251203)
+## 🌐 访问地址
 
-## 🎭 角色配置
-
-- 🐺 **狼人** (3人)：夜间讨论，选择淘汰目标
-- 👨‍🌾 **村民** (3人)：白天投票，推理分析
-- 🔮 **预言家** (1人)：夜间查验玩家身份
-- 🧙‍♀️ **女巫** (1人)：拥有解药和毒药
-- 🏹 **猎人** (1人)：被淘汰时可带走一名玩家
-
-## 📊 数据统计
-
-- **总对局数：** 1局
-- **村民胜率：** 100%
-- **平均时长：** 4天3夜
-- **平安夜次数：** 1次
-
-[查看完整统计 →](./statistics/)
+- **GitHub Pages**: https://ashwinyue.github.io/wolf-game-wiki/
+- **本地开发**: http://localhost:5173/wolf-game-wiki/
 
 ## 🛠️ 技术栈
 
-- **VitePress**：静态站点生成器
-- **Vue.js**：前端框架
-- **Markdown**：内容编写
-- **Eino ADK**：后端AI框架
+- [VitePress](https://vitepress.dev/) - 静态网站生成器
+- [Vue.js](https://vuejs.org/) - 前端框架
+- [TypeScript](https://www.typescriptlang.org/) - 编程语言
+- GitHub Pages - 免费托管服务
 
 ## 📄 许可证
 
@@ -92,12 +81,8 @@ MIT License
 
 ## 🤝 贡献
 
-欢迎提交 Issue 和 Pull Request 来改进这个项目！
-
-## 📞 联系方式
-
-如有问题或建议，请通过 GitHub Issues 联系我们。
+欢迎提交 Issue 和 Pull Request！
 
 ---
 
-*基于 Eino ADK 框架构建的智能狼人杀游戏系统*
+*基于 Eino ADK 构建的智能狼人杀游戏 Wiki*
